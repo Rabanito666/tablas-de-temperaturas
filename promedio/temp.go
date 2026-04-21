@@ -35,6 +35,10 @@ func Temperaturas(){
 		break
 	}
 
+	if temperatura == "mamaguebo"{
+		fmt.Println("mamaguebo e la perra de la mai tuya hijo de tu regrandisima puta madre,mamaguebo")
+	}
+
 	estadistica,err:= strconv.Atoi(temperatura)
 
 	if err != nil{
@@ -42,13 +46,13 @@ func Temperaturas(){
 		continue
 	}
 
-	validos++
 	
-	if estadistica < -50 && estadistica > 50 {
+	if estadistica < -50 || estadistica > 50 {
 		invalido++
 		continue
 	}
-
+	
+	validos++
 //temperatura mas alta y mas baja papa
 
 if primero {
